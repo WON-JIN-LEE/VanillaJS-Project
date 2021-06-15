@@ -1,32 +1,19 @@
-function minusFive(potato) {
-    console.log(potato - 5);
+const age = parseInt(prompt("how old are you?"));
+
+if (isNaN(age) || age < 0) {
+    console.log(" write a Number");
+} else if (age < 18) {
+    console.log("You are too young")
+} else if (age >= 18 && age <=50) {
+    console.log(" You can drink");
+}else if(age >50 && age <= 80){
+    console.log(" You should exercise");
+}else if (age === 100) {
+    console.log( "wow you are wise")
+} else if (age > 80) {
+    console.log( "you can whatever you want")
 }
 
-minusFive(10, 10, 12, 34, 4, 5, 6, 7);
-
-const calculator = {
-
-    add: function (a, b) {
-        console.log(a + b);
-    },
-    minus: function (a, b) {
-        console.log(a - b);
-    },
-    multi: function (a, b) {
-        console.log(a * b);
-    },
+if((a && b) || (c && d)){
     
-    division: function (a, b) {
-        console.log(a / b);
-    }, 
-    squared: function (a, b) {
-        console.log(a ** b);
-    },
-    
-};
-
-calculator.add(5, 1);
-calculator.minus(5, 1);
-calculator.multi(5, 1);
-calculator.division(5, 1);
-calculator.squared(5,2);
+}
