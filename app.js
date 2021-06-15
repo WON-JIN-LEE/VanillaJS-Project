@@ -1,15 +1,32 @@
-'use strict';
+function minusFive(potato) {
+    console.log(potato - 5);
+}
 
-const a = 10;
-const b = 2;
+minusFive(10, 10, 12, 34, 4, 5, 6, 7);
 
-let myName = "Jin";
+const calculator = {
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
+    add: function (a, b) {
+        console.log(a + b);
+    },
+    minus: function (a, b) {
+        console.log(a - b);
+    },
+    multi: function (a, b) {
+        console.log(a * b);
+    },
+    
+    division: function (a, b) {
+        console.log(a / b);
+    }, 
+    squared: function (a, b) {
+        console.log(a ** b);
+    },
+    
+};
 
-myName = "WonJin";
-
-console.log("hello " + myName);
+calculator.add(5, 1);
+calculator.minus(5, 1);
+calculator.multi(5, 1);
+calculator.division(5, 1);
+calculator.squared(5,2);
