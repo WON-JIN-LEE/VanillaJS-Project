@@ -1,7 +1,13 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-console.log(h1);
-function handleTitleClick() {
-    h1.classList.toggle("clicked");
+function onLoginBtnClick() {
+    const username = loginInput.value;
+    console.log(username);
+    // if (username === "") {
+    //     alert("Please write your name");
+    // } else if (username.length > 15) {
+    //     alert("Too Long");
+    // }
 }
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onLoginBtnClick);
