@@ -12,22 +12,31 @@ body {
   height: 100vh;
   margin: 0;
   background-color: var(--color-dark-grey);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* home */
 section#home {
-  position: relative;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h2#clock {
   font-size: 48px;
 }
+form#login-form input {
+  display: block;
+}
+
+#todo-container {
+  width: 300px;
+  height: 300px;
+}
+
 #weather {
   position: fixed;
   top: 30px;
@@ -35,10 +44,9 @@ h2#clock {
 }
 
 #quote {
-  position: fixed;
-  bottom: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #quote span {
@@ -49,6 +57,14 @@ h2#clock {
 input {
   margin: 10px;
   width: 300px;
+  background-color: unset;
+  color: var(--color-white);
+  border: 0px;
+  font-size: 20px;
+}
+input::placeholder {
+  color: var(--color-white);
+  text-align: center;
 }
 
 #todo-list {
