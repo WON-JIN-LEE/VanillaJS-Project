@@ -5,5 +5,5 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 const backImage = document.createElement("img");
 
 backImage.src = `img/${chosenImage}`;
-
+backImage.classList.add("backImage");
 document.body.appendChild(backImage);
