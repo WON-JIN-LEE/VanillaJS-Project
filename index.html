@@ -5,15 +5,45 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--웹페이지를 만든 사람-->
+        <title>Scheduler App</title>
+        <meta name="description" content="Scheduler App for JIN"> <!-- 웹페이지 정보에 대한 설명 -->
+        <meta name="author" content="JIN">
+        
+        <!--아이콘 추가-->
+        <link rel="icon" type="image/png" href="img/borad.png">
+        
+        <!--google Fonts add-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <!--Font awesome 추가-->
+        <script src="https://kit.fontawesome.com/44927fef76.js" crossorigin="anonymous"></script>
+        
         <link rel="stylesheet" href="css/index.css">
-        <title>Momentum App</title>
+
     </head>
 
     <body>
+        <section id="section_weather">
+            <div class="section__weather__logo">
+                <i class="fas fa-clipboard-list"></i>
+                <a href="#">WONJIN</a>
+            </div>
+
+            <div id="weather">
+                <i></i>
+                <span></span>
+                <i class="fas fa-temperature-low lwj" ></i>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
 
         <section id="home">
             <h2 id="clock" class="hidden">00:00</h2>
             <form id="login-form" class="hidden">
+                <h1>How are you doing?</h1>
                 <input
                     required="required"
                     maxlength="15"
@@ -29,19 +59,17 @@
                     required="required">
             </form>
             <div id="todo-container" class="hidden">
-            <ui id="todo-list"></ui>
+                <ui id="todo-list"></ui>
             </div>
+        </section>
 
+        
             <div id="quote">
                 <span></span>
                 <span></span>
             </div>
+    
 
-            <div id="weather">
-                <span></span>
-                <span></span>
-            </div>
-        </section>
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>
         <script src="js/quotes.js"></script>
