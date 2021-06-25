@@ -34,7 +34,7 @@
             <div id="weather">
                 <i></i>
                 <span></span>
-                <i class="fas fa-temperature-low lwj" ></i>
+                <i class="fas fa-temperature-low" ></i>
                 <span></span>
                 <span></span>
             </div>
@@ -42,21 +42,22 @@
 
         <section id="home">
             <h2 id="clock" class="hidden">00:00</h2>
-            <form id="login-form" class="hidden">
-                <h1>How are you doing?</h1>
+            <form id="login-form" class="hidden login-form">
+                <h1>What's your name?</h1>
                 <input
                     required="required"
-                    maxlength="15"
+                    maxlength="30"
                     type="text"
-                    placeholder="__________________________________">
+                    placeholder="__________________________________" autofocus>
                 <input type="submit" value="Log In">
             </form>
+
             <h1 id="greeting" class="hidden"></h1>
             <form id="todo-form" class="hidden">
                 <input
                     type="text"
                     placeholder="Write a To Do and Press Enter"
-                    required="required">
+                    required="required" autofocus>
             </form>
             <div id="todo-container" class="hidden">
                 <ui id="todo-list"></ui>
