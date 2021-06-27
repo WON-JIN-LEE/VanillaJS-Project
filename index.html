@@ -7,21 +7,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--웹페이지를 만든 사람-->
         <title>Scheduler App</title>
-        <meta name="description" content="Scheduler App for JIN"> <!-- 웹페이지 정보에 대한 설명 -->
+        <meta name="description" content="Scheduler App for JIN">
+        <!-- 웹페이지 정보에 대한 설명 -->
         <meta name="author" content="JIN">
-        
+
         <!--아이콘 추가-->
         <link rel="icon" type="image/png" href="img/borad.png">
-        
+
         <!--google Fonts add-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet">
+
         <!--Font awesome 추가-->
         <script src="https://kit.fontawesome.com/44927fef76.js" crossorigin="anonymous"></script>
-        
-        <link rel="stylesheet" href="css/index.css">
 
+        <link rel="stylesheet" href="css/index.css">
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script defer="defer" src="js/greetings.js"></script>
+        <script defer="defer" src="js/clock.js"></script>
+        <script defer="defer" src="js/quotes.js"></script>
+        <script defer="defer" src="js/background.js"></script>
+        <script defer="defer" src="js/todo.js"></script>
+        <script defer="defer" src="js/weather.js"></script>
     </head>
 
     <body>
@@ -34,50 +47,47 @@
             <div id="weather">
                 <i></i>
                 <span></span>
-                <i class="fas fa-temperature-low" ></i>
+                <i class="fas fa-temperature-low"></i>
                 <span></span>
                 <span></span>
             </div>
         </section>
 
         <section id="home">
-            
-            <form id="login-form" class="hidden">
-                <h1>What's your name?</h1>
-                <input
-                    required="required"
-                    maxlength="30"
-                    type="text"
-                    placeholder="_____________________________________________" autofocus>
-                <input type="submit" value="Log In">
-            </form>
+            <div class="login__container">
+                <form id="login-form" class="hidden">
+                    <h1>What's your name?</h1>
+                    <input
+                        required="required"
+                        maxlength="30"
+                        type="text"
+                        placeholder="_____________________________________________"
+                        autofocus="autofocus">
+                    <input type="submit" value="Log In">
+                </form>
+            </div>
+            <div class="clock__container">
+                <h2 id="clock" class="hidden">00:00</h2>
+                <h1 id="greeting" class="hidden"></h1>
+                <form id="todo-form" class="hidden">
+                    <input
+                        type="text"
+                        placeholder="Write a To Do and Press Enter"
+                        required="required"
+                        autofocus="autofocus">
+                </form>
 
-            <h2 id="clock" class="hidden">00:00</h2>
-            <h1 id="greeting" class="hidden"></h1>
-            <form id="todo-form" class="hidden">
-                <input
-                    type="text"
-                    placeholder="Write a To Do and Press Enter"
-                    required="required" autofocus>
-            </form>
-            <div id="todo-container" class="hidden">
-                <ui id="todo-list"></ui>
+                <div id="todo-container" class="hidden">
+                    <ui id="todo-list"></ui>
+                </div>
             </div>
         </section>
 
-        
-            <div id="quote">
-                <span></span>
-                <span></span>
-            </div>
-    
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
 
-        <script src="js/greetings.js"></script>
-        <script src="js/clock.js"></script>
-        <script src="js/quotes.js"></script>
-        <script src="js/background.js"></script>
-        <script src="js/todo.js"></script>
-        <script src="js/weather.js"></script>
     </body>
 
 </html>
