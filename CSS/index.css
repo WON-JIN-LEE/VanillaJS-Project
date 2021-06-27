@@ -44,6 +44,7 @@
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  background-color: var(--color-black);
 }
 
 /* Typography */
@@ -62,6 +63,19 @@ h2 {
   color: var(--color-white);
 }
 
+li {
+  list-style: none;
+  padding: 0px 10px;
+  margin: 5px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 input {
   margin: 20px 35px;
   background-color: unset;
@@ -78,6 +92,7 @@ input::placeholder {
 
 .hidden {
   display: none;
+  opacity: 0;
 }
 
 @keyframes fadeIn {
@@ -136,15 +151,30 @@ form {
 
 h2#clock {
   font-size: var(--font-big);
-  margin: 0;
+  margin: 0px;
+}
+
+h1#greeting {
+  font-size: var(--font-medium);
+  margin: 20px;
 }
 
 div#todo-container {
   width: 300px;
-  height: 300px;
+  /* height: 300px; */
   text-align: left;
-  border: 2px solid var(--color-white);
+  border: 1px solid var(--color-white);
   border-radius: 5%;
+}
+
+#todo-form input {
+  border: 1px solid var(--color-white);
+  width: 300px;
+}
+
+.login-form {
+  opacity: 1;
+  transition: all var(--animation-duration) ease-in;
 }
 
 /* quote */
@@ -153,6 +183,7 @@ div#todo-container {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
 }
 
 #quote span {
@@ -161,4 +192,20 @@ div#todo-container {
   font-size: var(--font-regular);
   font-weight: var(--weight-semi-bold);
   color: var(--color-white);
+}
+
+/* For below 768px screen width*/
+@media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  #home {
+    height: 400px;
+  }
 }
