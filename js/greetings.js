@@ -6,6 +6,7 @@ const greeting = document.querySelector("#greeting");
 const clockHidden = document.querySelector("#clock");
 const toDoFormHidden = document.querySelector("#todo-form");
 const todoContainer = document.querySelector("#todo-container");
+const home= document.querySelector("#home");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -34,3 +35,4 @@ if (savedUsername === null) {
 } else {
     paintGreeting(savedUsername);
 }
+

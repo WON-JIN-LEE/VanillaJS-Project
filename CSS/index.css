@@ -65,16 +65,17 @@ h2 {
 
 li {
   list-style: none;
-  padding: 0px 10px;
+  padding: 2px 10px;
   margin: 5px;
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
 }
 
 img {
-  background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover; /* 해당 속성을 통해서 이미지를 컨테이너에 맞출 수 있다.*/
 }
 input {
   margin: 20px 35px;
@@ -90,9 +91,21 @@ input::placeholder {
   text-align: center;
 }
 
+button {
+  background: none;
+  border: hidden;
+  padding: 4px;
+}
+
+button:hover {
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  transition: all var(--animation-duration) ease;
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
-  opacity: 0;
 }
 
 @keyframes fadeIn {
@@ -160,21 +173,15 @@ h1#greeting {
 }
 
 div#todo-container {
-  width: 300px;
+  width: 310px;
   /* height: 300px; */
   text-align: left;
-  border: 1px solid var(--color-white);
-  border-radius: 5%;
 }
 
 #todo-form input {
+  border-radius: 4px;
   border: 1px solid var(--color-white);
   width: 300px;
-}
-
-.login-form {
-  opacity: 1;
-  transition: all var(--animation-duration) ease-in;
 }
 
 /* quote */
@@ -183,7 +190,7 @@ div#todo-container {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #quote span {
@@ -198,6 +205,7 @@ div#todo-container {
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
+    --font-big: 48px;
     --font-large: 30px;
     --font-medium: 18px;
     --font-regular: 16px;
@@ -207,5 +215,9 @@ div#todo-container {
 
   #home {
     height: 400px;
+  }
+
+  #quote span {
+    width: auto;
   }
 }
