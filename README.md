@@ -1,8 +1,30 @@
-# 바닐라 JS 크롭 웹 만들기
+# Scheduler Web
 
-## Scheduler Web
+### Project
 
-> MY Web Site [here](https://won-jin-lee.github.io/VanillaJS-Project/)
+- 프로젝트 : Scheduler App
+- 언어 : HTML, CSS, JavaScript
+- 기간 : 21.06.10 ~ 06.27
+
+### 주요 기능
+
+1. 실시간으로 초단위 시간을 보여준다.
+2. openweathermap API를 이용해서 실시간으로 지역과 날씨, 온도 데이터를 받아와서 화면 상단에 렌더링한다.
+3. 로그인 후 to do List를 작성할 수 있다.
+
+### Screen Shot
+
+| Login  |                photo                |
+| :----: | :---------------------------------: |
+| before | ![image description](img/Login.png) |
+
+|       |                                        |
+| :---: | :------------------------------------: |
+| after | ![image description](img/todoList.png) |
+
+### Scheduler Web
+
+> Click [here](https://won-jin-lee.github.io/VanillaJS-Project/)
 
 ---
 
