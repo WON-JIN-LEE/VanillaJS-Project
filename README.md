@@ -12,6 +12,8 @@
 2. openweathermap API를 이용해서 실시간으로 지역과 날씨, 온도 데이터를 받아와서 화면 상단에 렌더링한다.
 3. 로그인 후 to do List를 작성할 수 있다.
 
+### Scheduler Web [Click here](https://won-jin-lee.github.io/VanillaJS-Project/)
+
 ### Screen Shot
 
 | Login  |                photo                |
@@ -21,10 +23,6 @@
 |       |                                        |
 | :---: | :------------------------------------: |
 | after | ![image description](img/todoList.png) |
-
-### Scheduler Web
-
-> Click [here](https://won-jin-lee.github.io/VanillaJS-Project/)
 
 ---
 
